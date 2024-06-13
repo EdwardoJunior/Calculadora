@@ -3,3 +3,5 @@
 2024-06-12 07:07:35 - OPERACIÓN: Suma: 3 + 3 = 6
 2024-06-12 07:12:21 - OPERACIÓN: Resta: 4 - 4 = 0
 2024-06-13 10:08:00 - OPERACIÓN: Multiplicación: 4 * 4 = 16
+2024-06-13 10:18:58 - OPERACIÓN: División: 10 / 2 = 5
+2024-06-13 10:19:08 - OPERACIÓN: División: 10 / 5 = 2
