@@ -5,3 +5,4 @@
 2024-06-13 10:08:00 - OPERACIÓN: Multiplicación: 4 * 4 = 16
 2024-06-13 10:18:58 - OPERACIÓN: División: 10 / 2 = 5
 2024-06-13 10:19:08 - OPERACIÓN: División: 10 / 5 = 2
+2024-06-13 10:34:48 - OPERACIÓN: Suma: 5 + 5 = 10

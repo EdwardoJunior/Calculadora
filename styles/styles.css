@@ -29,15 +29,9 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    background-color: #b1b1b1;
 }
-button#sumar {
-    background-color: #4CAF50;
-    color: white;
-}
-button#restar {
-    background-color: #f44336;
-    color: white;
-}
+
 .result {
     margin-top: 20px;
     padding: 10px;
