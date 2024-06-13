@@ -23,6 +23,7 @@
             <input type="number" name="valor2" placeholder="Valor 2" required>
             <button type="submit" name="operacion" value="sumar" id="sumar">Sumar</button>
             <button type="submit" name="operacion" value="restar" id="restar">Restar</button>
+            <button type="submit" name="operacion" value="multiplicar" id="multiplicar">Multiplicar</button>
         </form>
 
         <?php
@@ -48,19 +49,22 @@
                 } elseif ($operacion == "restar") {
                     $resultado = $valor1 - $valor2;
                     log_operacion("Resta: $valor1 - $valor2 = $resultado");
+                } elseif($operacion == "multiplicar"){
+                    $resultado = $valor1 * $valor2;
+                    log_operacion("Multiplicación: $valor1 * $valor2 = $resultado");
                 }
             }
         }
 
         // Funciones de logging
         function log_error($mensaje) {
-            $log = fopen("log/log.txt", "a");
+            $log = fopen("../logs/logs.txt", "a");
             fwrite($log, date("Y-m-d H:i:s") . " - ERROR: $mensaje" . PHP_EOL);
             fclose($log);
         }
 
         function log_operacion($mensaje) {
-            $log = fopen("log/log.txt", "a");
+            $log = fopen("../logs/logs.txt", "a");
             fwrite($log, date("Y-m-d H:i:s") . " - OPERACIÓN: $mensaje" . PHP_EOL);
             fclose($log);
         }
