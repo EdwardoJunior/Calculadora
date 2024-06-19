@@ -23,8 +23,6 @@
             <input type="number" name="valor2" placeholder="Valor 2" required>
             <button type="submit" name="operacion" value="sumar" id="sumar">Sumar</button>
             <button type="submit" name="operacion" value="restar" id="restar">Restar</button>
-            <button type="submit" name="operacion" value="multiplicar" id="multiplicar">Multiplicar</button>
-            <button type="submit" name="operacion" value="dividir" id="dividir">Dividir</button>
         </form>
 
         <?php
@@ -50,13 +48,7 @@
                 } elseif ($operacion == "restar") {
                     $resultado = $valor1 - $valor2;
                     log_operacion("Resta: $valor1 - $valor2 = $resultado");
-                } elseif($operacion == "multiplicar"){
-                    $resultado = $valor1 * $valor2;
-                    log_operacion("Multiplicación: $valor1 * $valor2 = $resultado");
-                } elseif($operacion == "dividir"){
-                    $resultado = $valor1 / $valor2;
-                    log_operacion("División: $valor1 / $valor2 = $resultado");
-                }
+                } 
             }
         }
 
